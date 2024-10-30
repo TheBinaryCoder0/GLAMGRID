@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart_style.css">
+</head>
+<body>
+    <div id="cartMain">
+
+        <div id="backToShop">
+            <div id="iconBackToShop">
+                <button id="backToShopButton" onclick="window.location.href='index.html'">
+                    <img src="./arrow-left-line.svg" alt="Go Back">
+                </button>
+            </div>
+            <div id="backToShopText">
+                <h2>Continue Shopping</h2>
+            </div>
+        </div>
+
+        <div id="shoppingCart">
+            <div id="shoppingCartText">
+                <h1>Shopping Cart ( 0 items )</h1>
+            </div>
+            <div id="shoppingCartItems">
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/medium-shot-asian-model-posing-with-yellow-background_23-2148239964.jpg?t=st=1729232630~exp=1729236230~hmac=6b8e0a879989fcbbc1a4033576fb56e5d07a7b11641999d11ca7261f21876ab9&w=740" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Classic White T-Shirt</h3>
+                        <p>Brand: Levi's</p>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 100% Cotton</p>
+                        <p>Price: $15.99</p>
+                        <p>Quantity: 2</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/medium-shot-models-white-posing_23-2148239966.jpg?t=st=1729233020~exp=1729236620~hmac=b76d525558b34e4004a336d4f5e8494c911e9189c9e8b00019c1bac47b2e37bd&w=740" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Women's High-Waisted Skinny Jeans</h3>
+                        <p>Brand: Zara</p>
+                        <p>Size: 28</p>
+                        <p>Color: Dark Blue Denim</p>
+                        <p>Material: 98% Cotton, 2% Elastane</p>
+                        <p>Price: $39.99</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/fashion-stylish-beautiful-young-brunette-woman-model-summer-hipster-colorful-casual-clothes-posing-street_158538-12024.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Leather Jacket</h3>
+                        <p>Size: Large</p>
+                        <p>Color: Black</p>
+                        <p>Material: Genuine Leather</p>
+                        <p>Price: $89.99</p>
+                        <p>Quantity: 1</p>
+                        <p>Brand: H&M</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/fashion-girl-posing-studio-wearing-smart-casual-sportive-outfit-business-style-sweet-pastel-colors-sunglasses-backpack-denim-jacket-mint-background-stylish-woman_291049-1799.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Women's Floral Summer Dress</h3>
+                        <p>Size: Small</p>
+                        <p>Color: Yellow with Floral Print</p>
+                        <p>Material: 100% Rayon</p>
+                        <p>Price: $29.99</p>
+                        <p>Quantity: 1</p>
+                        <p>Brand: Forever 21</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/portrait-young-happy-smiling-woman-model-with-bright-makeup-colorful-lips-with-two-pigtails-sunglasses-summer-red-clothes-isolated_158538-8708.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Hooded Sweatshirt</h3>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 80% Cotton, 20% Polyester</p>
+                        <p>Price: $45.99</p>
+                        <p>Quantity: 1</p>
+                        <p>Brand: Nike</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/she-has-great-street-style_329181-4716.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Hooded Sweatshirt</h3>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 80% Cotton, 20% Polyester</p>
+                        <p>Price: $45.99</p>
+                        <p>Quantity: 1</p>
+                        <p>Brand: Nike</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/fashion-portrait-young-elegant-woman_1328-2683.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Hooded Sweatshirt</h3>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 80% Cotton, 20% Polyester</p>
+                        <p>Price: $45.99</p>
+                        <p>Quantity: 1</p>
+                        <p>Brand: Nike</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/portrait-pretty-woman-sunglasses-hat-blue-colorful-wall_231208-545.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Hooded Sweatshirt</h3>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 80% Cotton, 20% Polyester</p>
+                        <p>Price: $45.99</p>
+                        <p>Quantity: 1</p>
+                        <p>Brand: Nike</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/woman-model-demonstrating-winter-cloths_1303-17002.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Hooded Sweatshirt</h3>
+                        <p>Brand: Nike</p>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 80% Cotton, 20% Polyester</p>
+                        <p>Price: $45.99</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cartItems">
+                    <div class="itemPhoto">
+                        <img src="https://img.freepik.com/free-photo/clothes-from-wool-are-best-winter_329181-4682.jpg?ga=GA1.1.1622007321.1728679762&semt=ais_hybrid" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <h3>Men's Hooded Sweatshirt</h3>
+                        <p>Brand: Nike</p>
+                        <p>Size: Medium</p>
+                        <p>Color: White</p>
+                        <p>Material: 80% Cotton, 20% Polyester</p>
+                        <p>Price: $45.99</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                    <div class="itemButtons">
+                        <div class="quantityManager">
+                            <div class="decreaseQuantity"><button class="quantityButton">-</button></div>
+                            <div class="quantityCount">0</div>
+                            <div class="increaseQuantity"><button class="quantityButton">+</button></div>
+                        </div>
+                        <div class="itemPrice">
+                            <h1>INR 1200</h1>
+                        </div>
+                        <div class="itemSize">
+                            <h1>Size:</h1>
+                            <button class="sizeDecreaseButton">-</button>
+                            <div class="currentSize">38</div>
+                            <button class="sizeIncreaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="address">
+            <div class="textHeader">
+                <h2>Address</h2>
+            </div>
+            <div class="textBoxContainer">
+                <div class="textBox">
+                    <textarea class="inputText" placeholder="Your address" readonly></textarea>
+                </div>
+                <div class="editContainer">
+                    <button class="buttonEdit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment">
+            <div class="textHeader">
+                <h2>Payment Method</h2>
+            </div>
+            <div class="textBoxContainer">
+                <div class="textBox">
+                    <textarea class="inputText" placeholder="Your payment method"></textarea>
+                </div>
+                <div class="editContainer">
+                    <button class="buttonEdit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="discount">
+            <div class="textHeader">
+                <h3>Do you have any discount code ?</h3>
+            </div>
+            <div id="discountContent">
+                <div class="textBoxCoupon">
+                    <textarea class="inputCoupon" placeholder="Your coupon here"></textarea>
+                </div>
+                <div class="editContainer">
+                    <button class="buttonApply">Apply</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bill">
+            <div id="subtotal">
+                <div id="subtotalItems">
+                    <h2>Subtotal ( 0 items )</h2>
+                </div>
+                <div id="subtotalPrice">
+                    <h2>$0</h2>
+                </div>
+            </div>
+            <div id="shippingCost">
+                <div id="shippingCostText">
+                    <h2>Shipping Cost</h2>
+                </div>
+                <div id="shippingCostPrice">
+                    <h2>Free!</h2>
+                </div>
+            </div>
+            <div id="discountCost">
+                <div id="discountCostText">
+                    <h2>Discount</h2>
+                    <h2 id="question">?</h2>
+                </div>
+                <div id="discountCostPrice">
+                    <h2>-</h2>
+                </div>
+            </div>
+            <div id="total">
+                <div id="totalText">
+                    <h1>Total (incl. VAT)</h1>
+                    <h2>$0</h2>
+                </div>
+                <div id="checkoutButton">
+                    <button class="buttonCheckout">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./script_cart.js"></script>
+</html>

@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#aboutMain{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(121, 82, 10);
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+
+
+#backToHome {
+    width: 16%;
+    height: 8%;
+    position: absolute;
+    display: flex;
+}
+
+#iconBackToHome{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backToHomeText {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+#backToHomeButton {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.356);
+    transition: transform 0.3s ease-in-out;
+}
+
+#backToHomeButton:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+#backToHomeButton img {
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+.about {
+    top: 10%;
+    left: 28%;
+    position: absolute;
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: orange;
+  }
+  
+  .about .tagline {
+    font-size: 1.5rem;
+    color: white;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: orange;
+  }
+  
+  .about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .about ul li strong {
+    color: orange;
+  }
+  
+  .about-container p:last-child {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  @media (max-width: 768px) {
+    .about h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about p, .about ul li {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+
+  #leftImage{
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  }
+
+  #rightImage{
+    width: 19.5%;
+    height: 52%;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+  }
+
+  #rightImage img{
+    width: 100%;
+    height: 100%;
+  }

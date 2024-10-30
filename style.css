@@ -1,0 +1,412 @@
+*{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(121, 82, 10);
+  }
+  
+  #main #mtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+  }
+  
+  #mtext h1{
+    user-select: none;
+    white-space: nowrap;
+    font-family: "Voyage";
+    font-weight: 100;
+    color: white;  
+    font-size: 7vw;
+    line-height: 1;
+  }
+  
+  #mtext h3{
+    user-select: none;
+    white-space: nowrap;
+    font-family: "Voyage";
+    font-weight: 100;
+    color: white;  
+    font-size: 5vw;
+    line-height: 1;
+    position: absolute;
+    left: 22%;
+  }
+  
+  #left{
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    height: 100%;
+  }
+  
+  #nav{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 50px 60px;
+    gap: 100px;
+  }
+  
+  #nav h3{
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  
+  #nav a {
+    position: relative;              
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    letter-spacing: 1px;
+  }
+  
+  #nav a:hover {
+    transform: scale(1.1); 
+    color: #f0f0f0;
+  }
+  
+  #nav a::after {
+    content: '';                    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: white;        
+    transition: width 0.3s ease, transform 0.3s ease; 
+  }
+  
+  #nav a:hover::after {
+    width: 100%; 
+    transform: scaleX(1); 
+  }
+  
+  #nav a:active {
+    transform: scale(0.9); 
+    color: #f0f0f0; 
+  }
+  
+  #nav a:active::after {
+    width: 100%; 
+  }
+  
+  #searchbar {
+    width: 40vw;
+    height: 8vh;
+    background-color: rgb(121, 82, 10);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2.6%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: opacity 0.3s ease; 
+    z-index: 9999;
+  }
+  
+  #searchbar input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent; 
+    color: white;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #searchbar input::placeholder {
+    color: white; 
+  }
+  
+  #searchbar input:focus::placeholder {
+    color: orange; 
+    caret-color:orange;
+  }
+  
+  .hidden {
+    opacity: 0;
+    pointer-events: none; 
+  }
+  
+  .visible {
+    opacity: 1;
+    pointer-events: auto; 
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #centerimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 60%;
+    background-image: url('https://img.freepik.com/free-photo/pretty-glamorous-girl-touching-her-straw-hat-studio-portrait-joyful-young-woman-with-summer-bag_197531-11085.jpg?t=st=1729063532~exp=1729067132~hmac=26d48cdd34d5ab22e579d7e8e65ca1c2fb870cead79c546f156f4e3cdd842388&w=1380');
+    background-size:cover;
+    background-position:center;
+  }
+  
+  #text{
+    font-family: "gilroy";
+    display:block;
+    position: absolute;
+    top: 102%;
+    height: 180px;
+    width: 100%;
+    color: white;
+    /* background-color: rgb(140, 155, 128); */
+  }
+  
+  #point1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  
+  #heading1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    width: 30%;
+    height: 100%;
+  }
+  
+  #para1{
+    padding: 5px 5px;
+    width: 70%;
+    height: 100%;
+    font-size: 15;
+    font-weight: 400;
+  }
+  
+  #point2{
+    display: flex;
+    width: 100%;
+    height: 50%;
+  }
+  
+  #heading2{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    width: 30%;
+    height: 100%;
+  }
+  
+  #para2{
+    padding: 5px 5px;
+    width: 70%;
+    height: 100%;
+    font-size: 15;
+    font-weight: 400;
+  }
+  
+  #scroll{
+    position: absolute;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    left: 10%;
+    bottom: -10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  #scroll #line{
+    width: 150px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  #scroll h4{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+  }
+  
+  #center{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-image: url('https://img.freepik.com/free-photo/fashionable-man-front-blue-wall_23-2148184895.jpg?t=st=1729064270~exp=1729067870~hmac=3c8267f51aa9ff099cfff0b67d10c3b0c17a506c0378fdbf1f54165e631c2ec0&w=740'); */
+    background-image: url('https://img.freepik.com/free-photo/shopping-beautiful-woman-wearing-glasses-with-gold-credit-card-with-colorful-paper-bag-yellow_1150-19171.jpg?t=st=1729064775~exp=1729068375~hmac=932258e1211394b8cf27ea5df8569e4d26782205ebf302f6018a88684b6b1463&w=740');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #card{
+    z-index: 9999;
+    display: flex;
+    right: -5.6%;
+    bottom: 10%;
+    position: absolute;
+    width: 250px;
+    height: 160px;
+  }
+  
+  #cicons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(121, 82, 10);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  #cicons button {
+    width: 80%;
+    height: 40%;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    background-color: rgb(189, 130, 21);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  #cicons button:hover {
+    cursor: pointer;
+    background-color: orange; 
+    color: black;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+  #cicons button:active {
+    transform: scale(0.95); 
+    background-color: rgb(200, 200, 200); 
+  }
+  
+  
+  #cimage{
+    width: 70%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/front-view-woman-yellow-posing_23-2148240006.jpg?t=st=1729065278~exp=1729068878~hmac=81de47abda7b713e8d9c6944f0afc60339d01eceb7ae1ba22c426b9a6104874a&w=740');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #right{
+    position: relative;
+    width: 5%;
+    height: 100%;
+  }
+  
+  #rmenu{
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 74%;
+  }
+  
+  #rmenu #searchButton{
+    background:none;
+    width: 70%;
+    height: 10%;
+    border: none;
+    font-size: 30px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  #rmenu #searchButton:hover{
+    cursor: pointer;
+    background-color: rgb(121, 82, 10);
+    color: white;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #rmenu #searchButton:active {
+    transform: scale(0.95); 
+    background-color: rgb(200, 200, 200); 
+  }
+  
+  #rmenulinks {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #rmenulinks button {
+    width: 50%;
+    height: 10%;
+    color: white; 
+    font-size: 18px; 
+    border-radius: 25px; 
+    background-color: rgb(121, 82, 10);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  #rmenulinks button img {
+    filter: brightness(0) invert(1); 
+}
+
+  
+  #rmenulinks button:hover {
+    cursor: pointer;
+    transform: scale(1.25); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  #rmenulinks button:active {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
